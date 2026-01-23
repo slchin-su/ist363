@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Chin Lab 01</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+            background-color:#E38E49;}
+        .highlight {color:#E38E49;}
+        h1 {
+            color:#0A3981;
+            font-size: 2.5em;
+            animation-name: animatedName;
+            animation-duration: 8s;
+            animation-timing-function:linear;
+            transform-origin: center center;
+            
+            }
+        @keyframes animatedName {
+            0% {transform: translateY(-150px) translateX(0px)rotateY(0deg) scale(1)}
+            20% {transform: translateY(0px) translateX(0px) rotateY(0deg) scale(1)}
+            30% {transform: translateY(0px) translateX(0px) rotateY(180deg) scale(1)}
+            40% {transform: translateY(0px) translateX(0px)rotateY(0deg) scale(1)}
+            50% {transform: translateY(0px) translateX(0px) rotateY(180deg) scale(1)}
+            60% {transform: translateY(0px) translateX(0px) rotateY(0deg) scale(1)}
+            80% {transform: translateY(0px) translateX(15%) rotateY(0deg) scale(1.5)}
+            100% {transform: translateY(0px) translateX(0px) rotateY(0deg) scale(1)}
+
+        }
+      
+
+
+
+        p {
+            margin-right: 50px;
+            font-size: 1em;
+            }
+        #card {
+            background-color: #D4EBF8;
+            border-radius: 8px;
+            padding:10px 90px 20px 90px;
+            margin: auto;
+            width: 50%;
+        }
+        #imagebox {
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .image {margin-bottom:5px;}
+        #inner-container {
+            width: 75%;
+            margin:auto;}
+
+        @media only screen and (max-width: 800px) {
+            #inner-container {
+                width: auto;
+                padding: 0px;
+            }
+            p {
+                margin-right: auto;
+            }
+            #imagebox {
+                justify-content: center;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="card">
+        <div id="inner-container">
+            <h1> Sarah Chin</h1>
+            <p> 
+                Hello! Something <span class="highlight">personal</span> about me is that I enjoy making art, and specifically like to create paintings.
+                <span class="highlight">Professionally</span>, I am pursuing Industrial Design as a major, and am interested in UX Design. Currently, I am a Resident Advisor in Sadler Hall.
+                And something <span class="highlight">peculiar</span> is that I had a hedgehog for a pet when I was younger!
+            </p>
+            <div id="imagebox">
+                <img src="Chin_Portrait.jpg" alt="Portrait image of Sarah" class="image">
+                <img src="painting.jpg" alt="Portrait painting of figure holding water glass" class="image">
+                <img src="toyproject.jpg" alt="wooden squirrel automaton" class="image">
+                <img src="hedgehog.jpg" alt="hedgehog" class="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
