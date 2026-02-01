@@ -1,0 +1,45 @@
+@import 'variables';
+@mixin recipes {
+    border-radius: 10px;
+    box-shadow: 1px 4px 5px rgba(128, 128, 128, 0.712);;
+    color: $melon;
+    text-align: center;
+    background-size: cover;
+    min-width: 100px;
+    box-sizing: border-box;
+    .recipe-image {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box; }
+}
+
+
+// header, buttons
+@mixin orangewhite {
+    background-color: $orange;
+    color: white;
+}
+
+@mixin header {
+    color: $melon;
+    font-size: 2em
+}
+
+@mixin fullwidth {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+@mixin links {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    position: relative;
+    display: inline-block;
+    transition: transform  0.3s ease;
+}
