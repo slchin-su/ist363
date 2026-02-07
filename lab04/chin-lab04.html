@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="overflow-x-hidden font-sans bg-gray-100 border-box">
+    <header class="flex bg-indigo-950 p-4 justify-between text-white box-border">
+        <h1 class="text-2xl font-semibold"><span class="text-yellow-400">Orange</span> News</h1>
+        <nav class="hidden gap-4 md:flex flex-wrap">
+            <a href="home.html" class=" hover:scale-105">Home</a>
+            <a href="latest.html" class=" hover:scale-105">Latest</a>
+            <a href="scores.html" class=" hover:scale-105">Scores</a>
+            <a href="videos.html" class="hover:scale-105">Videos</a>
+            <a href="more.html" class="hover:scale-105">More</a>
+        </nav>
+    </header>
+    <section class="bg-gray-800 rounded-lg m-5">
+        <img src="images/campus.jpg" alt="Syracuse University Campus" class="rounded-t-lg h-96 w-full object-cover object-center">
+        <div class="p-5 text-white">
+            <h1 class="text-xl font-semibold">Will the Snow Ever Thaw?</h1>
+            <p>Get the latest scoop on the weather and everything that effects the get stream</p>
+        </div>
+    </section>
+    <section class="m-5">
+        <h2 class="text-xl font-semibold my-4">More Featured Stories</h2>
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="bg-white rounded-lg p-3 shadow-md hover:scale-105">
+                <img src="images/graduates.jpg" alt="Syracuse Graduates" class="rounded">
+                <div class="my-2">
+                    <h3 class="text-lg font-semibold">Graduation 2025</h3>
+                    <p>Invite your friends and family to join us in May</p>  
+                </div>
+
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-md hover:scale-105">
+                <img src="images/runners.jpg" alt="Syracuse Marathon Runners">
+                <div class="my-2">
+                    <h3 class="text-lg font-semibold">Workplace Run</h3>
+                    <p>Run a 5k with your colleagues</p>                    
+                </div>
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-md hover:scale-105">
+                <img src="images/artshow.jpg" alt="Syracuse Art Show">
+                <div class="my-2">
+                    <h3 class="text-lg font-semibold">Art Show</h3>
+                    <p>The best art of the year on display at Schaffer</p>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col border-box md:flex-row gap-4 m-5">
+        <div class="w-full md:w-6/12">
+            <h2 class="text-xl font-semibold my-3">Top Headlines</h2>
+            <div class="bg-white rounded-lg p-3 shadow-md hover:scale-105">
+                <h3 class="text-lg font-semibold">Player X Breaks Record</h3>
+                <p>The record-breaking performance from Player X stunned fans everywhere...</p>
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-md my-4 hover:scale-105">
+                <h3 class="text-lg font-semibold">Team Y Wins Championship</h3>
+                <p>In an epic showdown, Team Y came out on top with a heroic victory...</p>
+            </div>
+            <div class="bg-white rounded-lg p-3 shadow-md hover:scale-105">
+                <h3 class="text-lg font-semibold">Athlete Z Announces Retirement</h3>
+                <p>Athlete Z's retirement shockked the sports world...</p>
+            </div>
+        </div>
+        <div class="w-full md:w-6/12">
+            <h2 class="text-xl font-semibold my-3">Game Scores</h2>
+            <div class="bg-white rounded-lg p-5 shadow-md">
+                <div class="flex justify-between mb-3 font-semibold">
+                    <p>Game</p>
+                    <p>Score</p>
+                </div>
+                <hr class="border mb-3">
+                <div class="flex justify-between mb-3">
+                    <p>Women's Hockey vs Miami</p>
+                    <p>3-1</p>
+
+                </div>
+                <div class="flex justify-between mb-3">
+                    <p>Men's Lacross vs St Bonaventure</p>
+                    <p>7-8</p>
+                </div>
+                <div class="flex justify-between mb-3">
+                    <p>Men's Basketball vs Duke</p>
+                    <p>98-75</p>
+                </div>
+                <!-- <table>
+                    <tr>
+                        <th>Game</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Women's Hockey vs Miami</td>
+                        <td>3-1</td>
+                    </tr>
+                    <tr>
+                        <td>Men's Lacross vs St Bonaventure</td>
+                        <td>7-8</td>
+
+                    </tr>
+                    <tr>
+                        <td>Men's Basketball vs Duke</td>
+                        <td>98-75</td>
+                    </tr>
+                </table> -->
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 rounded-lg m-5 text-white p-5">
+        <h2 class="text-xl font-semibold my-3">Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the laterst news, scores, and exclusive content delivered straight to your inbox!</p>
+        <form>
+            <input type="text" id="email" name="email" value="Enter your email" class="mt-4 rounded-l-md w-3/5 text-gray-400 px-3 min-w-min"> <br>
+            <button class="bg-yellow-400 text-gray-800 rounded-r-md py-1 px-2 text-center w-1/4 mb-3 min-w-min hover:scale-105">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>
