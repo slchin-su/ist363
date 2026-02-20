@@ -1,0 +1,26 @@
+//Custom variables
+// $primary: #951c85;
+// $light: #fbf5e5;
+// $warning: #1ba69c;
+$navnavy: #100c3f;
+$lightblue: #ceddf7;
+$headingblue: #201785;
+
+//Import bootstrap
+@import '../bootstrap-modules/node_modules/bootstrap/scss/bootstrap.scss';
+
+h1 {color: $headingblue;}
+
+nav, footer {background-color: $navnavy !important;}
+
+#reviews, #getintouch {background-color: $lightblue;}
+
+.carousel-inner {
+    max-height: 70vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 60vh;
+    object-position: center;
+}
