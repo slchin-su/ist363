@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 07</title>
+    <script>
+        // Question 1
+        let favNumber = 18;
+        console.log("My favorite number is " + favNumber + ".");
+
+        // Question 2
+        let favoriteFoods = ["spaghetti", "tacos", "greenbeans", "rice"];
+        console.log (favoriteFoods[1]);
+        favoriteFoods.push("chicken");
+        
+        // Question 3
+        for (let i = 0; i < favoriteFoods.length; i++) {
+            console.log("Favorite Food " + [i + 1] + ": " + favoriteFoods[i]);
+        };
+
+        // Question 4
+        for (let i = 0; i < favoriteFoods.length; i++) {
+            if (favoriteFoods[i] != "tacos") {
+                console.log("Favorite Food " + [i + 1] + ": " + favoriteFoods[i])
+            };
+            
+        };
+
+        // Question 5
+        let book = {
+            title: "Cinder",
+            author: "Marissa Meyer",
+            yearPublished: 2012,
+            isAvailable: true};
+
+        console.log (book.author + ", " + book.title);
+        if (isAvailable = true) {
+            console.log ("This book is available for checkout");}
+        
+        else {console.log("Sorry, this book is currently checked out");}
+
+        // Question 6
+        let x = 2
+         while (x<21) {
+              console.log(x);
+            x = x+2;   
+            }
+
+        // Question 7
+        let dieRoll = Math.floor(Math.random() * 6) + 1;
+        console.log(dieRoll);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
