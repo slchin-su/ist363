@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module">
+
+        const requestOptions = {
+        method: "GET",
+        redirect: "follow"
+        };
+
+        fetch("https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_s_Athletic_Courts/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json", requestOptions)
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.error(error));
+
+        function parseData() {
+            let parkName = "PARK";
+            let courtType = "COURT_TYPE";
+            console.log(parkName + courtType);
+        }
+
+        
+    </script>
+</head>
+<body onload="parseData()">
+    
+</body>
+</html>
