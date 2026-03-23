@@ -29,6 +29,6 @@ function parseData(result) {
         document.getElementById("cloudcover").innerText = "☁️"
     }
     else if (current.cloud_cover === 50) {
-        document.getElementById("cloudcover").innerText = "⛅"
+        document.getElementById("cloudcover").innerText = "⛅" //I was not sure what to do when it was 50% exactly
     }
 }
