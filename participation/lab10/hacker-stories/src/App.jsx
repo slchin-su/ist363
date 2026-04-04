@@ -1,37 +1,17 @@
 import './App.css'
-import { useState } from "react";
-    // const students = [{suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics'}, {suid: 234567, name: 'Ella Vader', year: 'junior', major: 'Information Management and Technology'}, {suid: 345678, name: 'Chris P Bacon', year: 'junior', major: 'Innovation, Society and Technology'}];     
-   const handleChange = (event) => {
-      console.log(event);
-      console.log(event.target.value);
-      };
-
-    const Likes = () => {
-    const [like, setLike] = useState('Click to Like'); }
-    let handleLike = () => {
-      setLike('Liked');
-    }
+    const students = [{suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics'}, {suid: 234567, name: 'Ella Vader', year: 'junior', major: 'Information Management and Technology'}, {suid: 345678, name: 'Chris P Bacon', year: 'junior', major: 'Innovation, Society and Technology'}];     
     function App() {
-      
-      return ( 
-        <div onClick={handleLike}>
-      
-          //Activity 1 Search
-
-            <label htmlFor="search">Search: </label>
-            <input id="search" type="text" onChange={handleChange} />
-        
-          //Activity 2 Likes
-            
-              <img src="https://picsum.photos/200" />
-              <p>{Liked}</p>
-        </div>
-      )
-    }
-
-
-
-
+    return (
+      <div>
+          <h1>Students</h1>
+          <Students />
+          <MyButton 
+          myMessage="Hello this is my message."
+          />
+          <FilterSue />
+      </div>
+    );
+  }  
 
   // Question 5 - Filtering
 function FilterSue() {

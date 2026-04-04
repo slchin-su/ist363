@@ -1,0 +1,33 @@
+import './App.css'
+import { useState } from "react";
+
+  let initialTasks = [
+  {id: 1, item: 'Complete Lab 11', status: 'Not Completed'},
+  {id: 2, item: 'Review JSX Events and State', status: 'Not Completed'},
+  
+]
+
+function App() {
+      
+      return ( 
+        <div>
+          <ToDoList />
+        </div>
+        
+      )
+    }
+
+function ToDoList() {
+    return (
+      <div>
+        <ul>
+          {
+            initialTasks.map(function(initialTasks) {
+            return <li key={initialTasks.id}>{initialTasks.item}</li>;
+          })}
+        </ul>
+      </div>
+    );
+    }
+
+export default app
