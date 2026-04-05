@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MET Randomizer</title>
     <link rel="stylesheet" href="project02-stylesheet.css">
+    <script src="chin-project02.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,52 +25,69 @@
         <h1>Met Museum Object Exploration</h1>
         <main>
             <div id="object-card">
-                <img src="images/placeholder-image.png" alt="image" id="object-image">
+                <img src="images/placeholder-image.png" alt="paintingimage" id="object-image">
                 <div id="object-info">
-                    <p>
-                        <strong>Title:</strong>
+                    <div>
+                        <div id="title">Title</div>
                         <br>
-                        <strong>Artist:</strong>
-                        <br>
-                        <strong>Date:</strong>
-                        <br>
-                        <strong>Culture:</strong>
-                    </p>
+                            <strong>Artist:</strong> <span id="artist"></span>
+                            <br>
+                            <strong>Date:</strong> <span id="date"></span>
+                            <br>
+                            <strong>Medium:</strong> <span id="medium"></span>
+                    </div>
+                    <br>
                     <button id="refresh">
-                        Refresh
-                        <img src="images/arrows-rotate-solid.png" alt="refresh-logo" id="refresh-icon">
+                        Click Me!
+                        <!-- Refresh
+                        <img src="images/arrows-rotate-solid.png" alt="refresh-logo" id="refresh-icon"> -->
 
                     </button>
                 </div>
             </div>
-            
         </main>
-        <div id="books">
-            <div>
-                <p><strong>Title:</strong> 
-                <br>
-                <strong>Author:</strong>
-                </p>
+        <section>
+            <div id="bookstitle">Books About the Artist</div>
+            <div id="books">
+                <div>
+                    <img src="images/default-book.png" alt="bookcover1" class="bookcover" id="bookcover1">
+                    <p><strong>Title:</strong> <span id="booktitle1"></span>
+                    <br>
+                    <strong>Author:</strong> <span id="bookauthor1"></span>
+                    <br>
+                    <strong>Date:</strong> <span id="bookdate1"></span>
+                    </p>
+                </div>
+                <div>
+                    <img src="images/default-book.png" alt="bookcover2" class="bookcover" id="bookcover2">
+                    <p><strong>Title:</strong> <span id="booktitle2"></span>
+                    <br>
+                    <strong>Author:</strong> <span id="bookauthor2"></span>
+                    <br>
+                    <strong>Date:</strong> <span id="bookdate2"></span>
+                    </p>
+                    
+                </div>
+                <div>
+                    <img src="images/default-book.png" alt="bookcover3" class="bookcover" id="bookcover3">
+                    <p><strong>Title:</strong> <span id="booktitle3"></span>
+                    <br>
+                    <strong>Author:</strong><span id="bookauthor3"></span>
+                    <br>
+                    <strong>Date:</strong> <span id="bookdate3"></span>
+                    </p>
+                </div>
             </div>
-            <div>
-                <p><strong>Title:</strong> 
-                <br>
-                <strong>Author:</strong>
-                </p>
-                
-            </div>
-            <div>
-                <p><strong>Title:</strong> 
-                <br>
-                <strong>Author:</strong>
-                </p>
-            </div>
-        </div>
+        </section>
     </div>
     <footer>
-        <p>Sarah Chin</p>
+        <p>
+            Creator: Sarah Chin
+        </p>
+        <p>
+           IST 363 Project 2 | Professor Scharf
+        </p>
+        
     </footer>
-    
-    
 </body>
 </html>
