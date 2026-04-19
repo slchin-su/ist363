@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird-Info Template</title>
+    <link rel="stylesheet" href="chin-project03.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <img src="../images/bird-icon.png" alt="bird logo" id="logo">
+            <h1 id="company-name">New York Birds</h1>
+        </div>
+        <div id="header-links">
+            <a class="link" href="url">Home</a>
+            <a class="link" href="url">The Birds</a>
+            <a class="link" href="url">Our Mission</a>
+        </div>
+    </header>
+    <div id="general-container">
+        <div id="full-flexbox">
+            <main>
+                <h1 class="bird-name">Saltmarsh Sparrow</h1>
+                <i class="bird-name">Ammodramus caudacutus</i>
+                <div id="bird-info">
+                    <div id="bird-info-col-01">
+                        <img src="../images/Saltmarsh-sparrow.jpg" alt="Saltmash Sparrow Image" id="id-image">
+                        <div class="whitebox">
+                            <h3>Recent Observations</h3>
+                            <ul>
+                                <li>Info</li>
+                                <li>Info</li>
+                                <li>Info</li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div id="bird-info-col-02">
+                        <div class="bird-text">
+                            <strong>Identification:</strong>
+                            <span>Medium-sized sparrow with a conical bill. Feathers are grey and orange on the head with a white stomach that has speckles of gray. </span>
+                        </div>
+                        <div class="bird-text">
+                            <strong>Habitat:</strong>
+                            <span>Tidal salt marshes, found on the south shore of Long Island</span>
+                        </div>
+                        <div class="bird-text">
+                            <strong>Diet:</strong>
+                            <span>Seeds of marsh plants, occasionally insects</span>
+                        </div>
+                        <div class="bird-text">
+                            <strong>Fun Fact:</strong>
+                            <span>Nests are most successful when made after the high tide of the new moon, as the new hatchlings can avoid the upcoming high tides</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <section id="fieldpractice">
+                <img src="../images/saltmarshsparrow-fieldpic.png" alt="Saltmarsh sparrow eating dragonfly" id="fieldpic">
+                <div id="observations">
+                    <h3 class="fieldjournal">Field Journal</h3>
+                    <p class="fieldjournal">What do you observe?</p>
+                    <input type="text" id="fname" name="fname">
+                    <button class="greenbutton">Note</button>  
+                </div>
+                
+                <div id="journal-container">
+                    <img src="../images/fieldjournal.png" alt="Journal" id="journalimage">
+                    <div id="journal-text">
+                        <ul>
+                            <li>Observation 1</li>
+                            <li>Observation 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+     <footer>
+            <p>
+                &copy; New York Birds 2026
+            </p>
+            
+    </footer>
+</body>
+</html>

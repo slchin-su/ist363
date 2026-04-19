@@ -1,0 +1,308 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #F8F8F8}
+
+#general-container {padding: 30px 100px;}
+.greenbutton {
+    background-color: #7E9980; 
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+}
+
+/* Header */
+header {
+    padding: 20px 40px 20px 40px;
+    background-color: #7E9980; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#company-name {
+    font-family: "Playfair Display", serif;
+}
+
+#logo {
+    width: 90px;}
+
+a:link {
+    color: white;
+    text-decoration: none;}
+
+#header-links {
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;}
+
+#header-logo {
+    display: flex;}
+
+.link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+footer {
+    padding: 20px 40px 20px 40px;
+    background-color: #7E9980; 
+    color: white;
+}
+
+/* HOME PAGE */
+#banner-container {
+    position: relative;
+    margin: 20px;
+    height: 40vh; 
+    overflow: hidden;
+    border-radius: 20px;
+}
+#banner {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: 50% 30%;
+    display: block;
+}
+
+#banner-text {
+    position: absolute;
+    top: 20px;  
+    left: 40px;  
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+#banner-header {
+    font-family: "Playfair Display", serif;
+}
+#banner-button {
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 6px;
+    border-style: solid;
+}
+#all-birds {
+    display: flex;
+    gap:20px;
+}
+.bird-card {
+    width: 25%; 
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px grey;
+}
+.bird-img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* BIRD INFO PAGE */
+#full-flexbox {
+    display: flex;
+    /* border: 5px solid red; */
+}
+.bird-name {
+    margin: 0px;
+    padding:0px;
+    /* border: 5px solid blue; */
+    width: 40%;
+}
+#bird-info {
+    display: flex;
+    margin-top: 10px;
+}
+#bird-info-col-01 {
+    width: 25%;
+    /* border: 5px solid blue; */
+}
+
+.whitebox {
+    background-color: white;
+    box-shadow: 3px 3px 5px grey;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#id-image {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#bird-info-col-02 {
+    width: 40%;
+    margin-left: 40px;
+    /* border: 5px solid blue; */
+    }
+
+.bird-text {
+    margin-bottom: 20px;
+}
+#fieldpractice {
+    /* border: 5px solid blue; */
+    border-left: 2px solid gray;
+    padding-left: 30px;
+}
+#fieldpic {
+    width: 100%;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+main {
+    flex: 3;
+}
+
+#fieldpractice {
+    flex: 1;
+}
+.fieldjournal {
+    margin: 0px;
+    padding:0px;
+}
+
+#journal-container {
+    position: relative;
+}
+
+#journalimage {
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+}
+
+#journal-text {
+    position: absolute;
+    top: 20px;  
+    left: 40px; 
+    width: 80%;
+    font-family: "Playfair Display", serif;
+    color: #333;
+    line-height: 1.8;
+}
+#observations {
+    padding-left:10px;
+}
+
+
+
+/* OUR MISSION PAGE */
+#submitted-gallery {
+    display: flex;
+    gap: 10px;
+}
+.submitted-pic {
+    width: 33%;
+    border-radius: 8px;
+}
+
+form {
+    background-color:#A5B3A6;
+    border-radius: 15px;
+    padding: 5px 80px 25px 30px;
+    margin-top: 30px;
+}
+
+.formspace {margin-bottom: 15px;}
+#areaspace {
+    margin-top: 20px;
+    display: block;}
+
+
+@media screen and (max-width: 800px) {
+    header {
+    padding: 20px;
+    flex-direction: column;
+    }
+
+   
+   #general-container {padding: 20px;}
+
+   /* HOME PAGE */
+   #banner-text {
+    top: 10px;  
+    left: 40px;  }
+
+    #banner { 
+    object-position: 30% 10%;
+}
+
+    #all-birds {
+    flex-direction: column;
+    }
+    .bird-card { width: 90%;}
+    .bird-img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    object-position: center;
+}
+
+    /* BIRD-INFO */
+    #full-flexbox {
+        flex-direction: column;
+    }
+    .bird-name {
+        width: 100%;
+    }
+    #bird-info {
+        flex-direction: column;
+    }
+    #bird-info-col-01 {
+        width: 100%;
+    }
+    #bird-info-col-02 {
+        width: 100%;
+        margin: 20px 10px 15px 1px;
+        /* border: 5px solid blue; */
+        }
+
+    #fieldpractice {
+        border-left: 0px;
+        padding-left: 0px;
+    }
+
+/* OUR MISSION PAGE */
+    #submitted-gallery {
+        flex-direction: column;
+    }
+    .submitted-pic {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box; /* makes sure padding doesn't push it wider */
+    }
+}
