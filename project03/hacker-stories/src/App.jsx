@@ -347,6 +347,7 @@ function JoinUsForm () {
 
   return (
     <form onSubmit={handleSubmit}>
+      <div id="form-text">
       <h1 className="formspace">Join New York Birds!</h1>
       {submitted && (
         <p><strong>Thank you for joining New York Birds! We will send information regarding your membership shortly.</strong></p>
@@ -378,6 +379,7 @@ function JoinUsForm () {
       </textarea><br />
 
       <button type="submit" id="submitbutton">Submit</button>
+      </div>
     </form>
   );
 }

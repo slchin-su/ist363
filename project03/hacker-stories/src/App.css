@@ -305,10 +305,13 @@ main {
 form {
     background-color:#A5B3A6;
     border-radius: 15px;
-    padding: 5px 80px 25px 30px;
+    padding: 5px 50px 25px 50px;
     margin-top: 30px;
 }
-
+#form-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
 .formspace {margin-bottom: 15px;}
 #areaspace {
     margin-top: 20px;
