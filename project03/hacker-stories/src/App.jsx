@@ -351,29 +351,29 @@ function JoinUsForm () {
       {submitted && (
         <p><strong>Thank you for joining New York Birds! We will send information regarding your membership shortly.</strong></p>
       )}
-      <label for="fname">First name: </label>
+      <label htmlFor="fname">First name: </label>
       <input type="text" id="fname" name="fname" className="formspace" onChange={handleChange} value={formData.fname}/><br/>
 
-      <label for="lname"className="formspace" >Last name: </label>
+      <label htmlFor="lname"className="formspace" >Last name: </label>
       <input type="text" id="lname" name="lname" className="formspace" onChange={handleChange} value={formData.lname}/><br/>
       
-      <label for="email">Email: </label>
+      <label htmlFor="email">Email: </label>
       <input type="text" id="email" name="email" className="formspace" onChange={handleChange} value={formData.email}/><br/>
 
 
-      <label for="sourcet">How did you hear about us?</label><br/>
+      <label htmlFor="sourcet">How did you hear about us?</label><br/>
 
       <input type="radio" id="member" name="source" value="member" checked={formData.source ==='member'} onChange={handleChange} />
-      <label for="member">A NYBirds Member</label><br/>
+      <label htmlFor="member">A NYBirds Member</label><br/>
 
       <input type="radio" id="familyfriends" name="source" value="familyfriends" checked={formData.source ==='familyfriends'} onChange={handleChange}/>
-      <label for="familyfriends">Family/Friend</label><br/>
+      <label htmlFor="familyfriends">Family/Friend</label><br/>
 
       <input type="radio" id="ad" name="source" value="ad" checked={formData.source ==='ad'} onChange={handleChange}/>
-      <label for="ad">Advertisement</label><br/>
+      <label htmlFor="ad">Advertisement</label><br/>
 
       
-      <label id="areaspace" for="interest">Why you're interested:</label><br/>
+      <label id="areaspace" htmlFor="interest">Why you're interested:</label><br/>
       <textarea  id="interest" name="interest" rows="4" cols="50" value={formData.interest} onChange={handleChange}>
       </textarea><br />
 
